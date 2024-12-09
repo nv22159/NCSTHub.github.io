@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn React</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #61dafb;
+            color: #000;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #000;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #21a1f1;
+            color: #fff;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #61dafb;
+            color: #000;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to React</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#resources">Resources</a>
+        </nav>
+    </header>
+    <div class="content">
+        <section id="about">
+            <h2>About React</h2>
+            <p>React is a JavaScript library for building user interfaces. It allows developers to create large web applications that can change data, without reloading the page. React is maintained by Facebook and a community of individual developers and companies.</p>
+        </section>
+        <section id="features">
+            <h2>Features of React</h2>
+            <ul>
+                <li>Component-based architecture</li>
+                <li>Declarative UI programming</li>
+                <li>Virtual DOM for optimized rendering</li>
+                <li>Strong community support and ecosystem</li>
+                <li>Reusable components for efficient development</li>
+            </ul>
+        </section>
+        <section id="resources">
+            <h2>Resources to Learn React</h2>
+            <p>Here are some excellent resources to get started:</p>
+            <ul>
+                <li><a href="https://reactjs.org/docs/getting-started.html" target="_blank">Official React Documentation</a></li>
+                <li><a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">React Tutorial</a></li>
+                <li><a href="https://www.freecodecamp.org/learn/front-end-libraries/react/" target="_blank">freeCodeCamp React Course</a></li>
+                <li><a href="https://www.codecademy.com/learn/react-101" target="_blank">Codecademy React Course</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Learn React. All rights reserved.</p>
+    </footer>
+</body>
+</html>

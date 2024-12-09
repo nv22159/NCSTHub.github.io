@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCSTHub - Educational Technology Platform</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            background-color: #1a237e;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #90caf9;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            padding-top: 80px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 35, 126, 0.9), rgba(26, 35, 126, 0.9)),
+                        url('/api/placeholder/1200/400') center/cover;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post h1 {
+            color: #1a237e;
+            text-align: center;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1a237e;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #1a237e;
+            margin-bottom: 1rem;
+        }
+
+        /* Entertainment Zone */
+        .entertainment {
+            background-color: #f5f5f5;
+        }
+
+        /* Blog Section */
+        .blog-post {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+
+        /* Community Section */
+        .feedback-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .btn {
+            background-color: #1a237e;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #283593;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1a237e;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">NCSTHub</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#education">Education</a>
+                <a href="#entertainment">Entertainment</a>
+                <a href="#blog">Blog</a>
+                <a href="#community">Community</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h1>Welcome to NCSTHub</h1>
+            <p>Your gateway to educational technology and interactive learning</p>
+        </section>
+
+        <!-- Educational Technology Section -->
+<section class="section" id="education">
+    <h2 class="section-title">Educational Technology</h2>
+    <div class="card-grid">
+        <a href="tech-tutorials.html" class="card" style="text-decoration: none; color: #333;">
+            <h3>Tech Tutorials</h3>
+            <p>Learn the latest programming languages and technologies</p>
+        </a>
+        <a href="career-tips.html" class="card" style="text-decoration: none; color: #333;">
+            <h3>Career Tips</h3>
+            <p>Navigate your tech career with expert guidance</p>
+        </a>
+        <a href="digital-skills.html" class="card" style="text-decoration: none; color: #333;">
+            <h3>Digital Skills</h3>
+            <p>Master essential digital skills for the modern workplace</p>
+        </a>
+        <a href="innovation-insights.html" class="card" style="text-decoration: none; color: #333;">
+            <h3>Innovation Insights</h3>
+            <p>Stay updated with the latest tech trends and innovations</p>
+        </a>
+    </div>
+</section>
+        </section>
+
+
+        <!-- Blog Section -->
+        <section class="section" id="blog">
+            <h2 class="section-title">Blog</h2>
+            <div class="blog-post">
+                <h3>Future of Technology</h3><br />
+            
+                <p>1. <strong>Artificial Intelligence (AI)</strong><br>
+                AI is one of the most exciting advancements in modern technology, making significant progress in areas like voice recognition, image identification, and natural language processing (NLP). Beyond these, AI holds great promise for transforming healthcare, finance, and transportation, and could play a crucial role in addressing climate change and poverty.</p><br />
+                
+                <p>2. <strong>Internet of Things (IoT)</strong><br>
+                IoT refers to the global network of interconnected devices that communicate and exchange data over the Internet. This includes a wide range of sensors used in both industrial and household settings. IoT has successfully automated homes, optimized energy use, and improved transportation, and its influence is expected to grow even more in the future.</p><br />
+                
+                <p>3. <strong>Augmented and Virtual Reality (AR/VR)</strong><br>
+                Interest in AR and VR has surged in recent years. These technologies aim to blend digital information with the physical world, enhancing user interaction. They have applications in entertainment, education, and healthcare, and are expected to become increasingly realistic and immersive.</p><br />
+                
+                <p>4. <strong>Blockchain</strong><br>
+                While blockchain technology underpins cryptocurrencies like Bitcoin, its potential extends far beyond. As a decentralized ledger, blockchain ensures secure data storage and transfer, benefiting sectors such as finance, healthcare, and supply chain management.</p><br />
+                
+                <p>5. <strong>5G Networks</strong><br>
+                The fifth generation of mobile networks, 5G, promises significantly faster speeds and lower latency compared to 4G. This advancement could enable new applications like autonomous vehicles, smart cities, and remote surgery. However, infrastructure challenges have delayed its rollout in some areas.</p><br />
+                
+                <p>6. <strong>Quantum Computing</strong><br>
+                Quantum computing leverages quantum mechanics to solve problems that are currently unsolvable with classical computers. Potential applications include developing new materials and simulating complex chemical reactions. Despite its infancy and technical challenges, quantum computing holds immense promise.</p><br />
+                
+                <p>7. <strong>Biotechnology</strong><br>
+                Biotechnology involves using biological systems, cells, and organisms to develop new products and technologies. It has applications in medicine, agriculture, and energy production. As new treatments and cures are discovered, biotechnology is set to play an increasingly vital role in our lives.</p><br />
+                
+                <p>8. <strong>Robotics</strong><br>
+                Robotics focuses on creating automated machines capable of performing specific tasks. Industries such as construction, healthcare, and transportation could greatly benefit from robotics. The future of robotics may see the development of machines with human-like cognitive abilities.</p><br />
+                
+                <p>9. <strong>Cloud Computing</strong><br>
+                Cloud computing involves storing and processing data on remote servers, revolutionizing data storage and access. As more applications and services leverage cloud computing, its importance will continue to rise. Cloud computing also supports AI applications like voice assistants and image recognition.</p><br />
+                
+                <p>10. <strong>Cybersecurity</strong><br>
+                As technology becomes more prevalent, cybersecurity is increasingly critical. It involves protecting computers and networks from digital attacks. With the growing number of cyber threats, safeguarding data will become even more essential.</p><br />
+            </div>
+
+            <div class="blog-post">
+                <h1>Students Articles</h1><br />
+                <div>
+                    <h2>MOHAMMED MAJEED</h2><br />
+                    <h3>My Journey at Nasser Center for Science and Technology</h3>
+                    <p>
+                        Hey there! I'm Mohammed, a student at the Nasser Center for Science and Technology (NCST). My journey here has been nothing short of amazing, and I'm excited to share a bit about my experiences and aspirations with you.
+                    </p><br />
+                    <h4>Diving into Cloud Computing</h4>
+                    <p><br />
+                        At NCST, I've specialized in cloud computing. It's a fascinating field that has completely transformed how businesses operate and store data. Through my coursework and hands-on projects, I've gained a deep understanding of cloud infrastructure, deployment, and management. The more I learn, the more I realize the endless possibilities that cloud computing offers.
+                    </p><br />
+                    <h4>A Passion for Cybersecurity</h4>
+                    <p><br />
+                        While cloud computing is my area of expertise, my true passion lies in cybersecurity. In today's digital age, protecting sensitive information and ensuring the integrity of systems is more important than ever. I love diving into the world of cyber threats and finding ways to defend against them. It's a challenging field, but one that I find incredibly rewarding.
+                    </p><br />
+                    <h4>Looking Ahead</h4>
+                    <p><br />
+                        In the future, I aspire to become a cybersecurity manager. I envision myself leading teams, developing robust security strategies, and implementing cutting-edge solutions to safeguard digital assets. My goal is to create a secure environment where businesses and individuals can thrive without fear of cyber attacks.
+                    </p><br />
+                    <p>
+                        My journey at NCST has been a blend of hard work, passion, and a clear vision for the future. As I continue to hone my skills and expand my knowledge, I'm confident that I'll achieve my dreams and make significant contributions to the field of cybersecurity. This is just the beginning, and I'm excited for what lies ahead.
+                    </p><br />
+                    <hr><br/>
+                </div>
+                
+                <div>
+                    <h2>ABDULLAH ABDULAZIZ</h2><br />
+                    <h3>My Journey at Nasser Center for Science and Technology</h3>
+                    <p><br />
+                        Hi, I'm Abdullah, a student at the Nasser Center for Science and Technology (NCST). My experiences here have been incredible, and I'd love to share my story and future goals.
+                    </p><br />
+                    <h4>Delving into Cloud Computing</h4>
+                    <p><br />
+                        At NCST, I’ve focused on cloud computing, a field that's transforming business operations and data storage. Through intense coursework and practical projects, I’ve developed a solid grasp of cloud infrastructure, deployment, and management. Each new discovery in this field fuels my curiosity and passion.
+                    </p><br />
+                    <h4>A Love for Finance and Banking</h4>
+                    <p><br />
+                        While cloud computing is my main area of study, my true passion lies in finance and banking. The ever-evolving financial world with its unique challenges fascinates me. Whether it's analyzing market trends, managing investments, or mastering financial systems, I find immense satisfaction and excitement in this field.
+                    </p><br />
+                    <h4>Ambitious Goals</h4>
+                    <p><br />
+                        In the future, I aim to become a successful and affluent finance and banking professional. I see myself leading financial ventures, making strategic investment decisions, and driving business growth. My ultimate goal is to build a substantial financial empire that leaves a lasting impact on the economy.
+                    </p>
+                    <p><br />
+                        My time at NCST has been a blend of dedication, hard work, and clear vision for the future. As I continue to enhance my skills and knowledge, I'm confident that I will achieve my ambitions and make significant contributions to the finance and banking sector. This is just the start, and I eagerly look forward to what the future holds.
+                    </p><br />
+                    <hr><br/>
+
+                </div>
+                
+                <div>
+                    <h2>SAYED MOHAMMED</h2><br />
+                    <h3>My Journey at Nasser Center for Science and Technology</h3><br />
+                     <p>
+                       
+                        Hey there! I'm Sayed Mohammed, a student at the Nasser Center for Science and Technology (NCST). My journey here has been amazing, and I'm excited to share a bit about my experiences and dreams with you.<br /><br />
+                    </p>
+                    <h3>Diving into Cloud Computing</h3><br />
+                        
+                        <p>
+                        At NCST, I specialize in cloud computing. It's a fascinating field that has changed how businesses work and store data. Through my classes and projects, I've learned a lot about cloud infrastructure, deployment, and management. The more I learn, the more I see the endless possibilities of cloud computing. <br />
+                        </p><br />  
+                        <h3>A Passion for Business and Sustainability</h3><br />
+                        <p>
+                        While cloud computing is my main focus now, my future goal is to become a businessman. I want to build an e-commerce brand that focuses on sustainable products. I believe that sustainability is very important for our future, and I want my business to make a positive impact on the environment. I am excited about combining my tech skills with my passion for sustainability to create something meaningful.<br />
+                        </p><br/>
+                        <h3>Memorable Experiences</h3><br />
+                        <p>
+                        During my time at NCST, I've had many memorable experiences. We went on trips that were both fun and educational. Visiting tech companies, attending workshops, and having outdoor adventures helped us learn in new ways and brought us closer as a class. These experiences have been a big part of my journey and have taught me a lot.
+                        
+                        In conclusion, my time at NCST has been incredible. It has given me the knowledge and confidence to follow my dreams. As I move on to the next part of my life, I will remember the lessons and memories from NCST and be ready for new challenges and opportunities.</p>
+                        </p>
+                    <br/>
+                    <hr><br/>
+
+                    <div>
+                        <h2>AHMED MOHAMMED</h2><br />
+                        <h3>My Journey at Nasser Center for Science and Technology</h3><br />
+                        <p>
+                            I am a passionate cloud computing student looking forward to apply real life applications of my major in the future and i like to develop websites on my own becuase i find it challenging.and i am the wesbite developer of this project, as i am approaching graduation from ncst i am looking forward to applying everything i leant here in my future work and college.
+                        </p>
+                        
+                
+                
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="section" id="community">
+            <h2 class="section-title">Community</h2>
+            <form class="feedback-form">
+                <input type="text" placeholder="Your Name" required>
+                <textarea rows="5" placeholder="Share your thoughts or submit content..." required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Created by: Sayed Mohamed,  Ahmed Algadwi</p>
+            
+        </footer>
+    </div>
+</body>
+</html>
